@@ -11,11 +11,6 @@ discovery_router = APIRouter(
 
 @discovery_router.post("/", response_model=List[Article])
 async def find_relevant_articles(criteria: SearchCriteria, N: int = 10):
-    """
-    Mengeksekusi logika Core Domain:
-    Menerima kriteria pencarian (Tag dan/atau Kategori) dan
-    mengembalikan daftar Artikel yang relevan.
-    """
     results = []
     
     all_articles = list(mock_articles.values())
