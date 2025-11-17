@@ -1,31 +1,52 @@
-# II3160 - Final Project: Content Blog Hub (Milestone 4)
+# Content Blog Hub
 
-Repositori ini berisi pengerjaan Final Project untuk mata kuliah **II3160 Teknologi Sistem Terintegrasi**.
+Content Blog Hub adalah sebuah layanan *backend* (API) yang dirancang untuk **Layanan Optimasi Penemuan Konten Pada Sistem Blog**. [cite_start]Dibuat dengan **Python**, **FastAPI**, dan **Pydantic**, dan berfokus pada implementasi *Core Domain* (`Content Discovery Context`) dari desain DDD [cite: 5123-5290].
 
-* **Mahasiswa:** Muhammad Azizdzaki Khrisnanurmuflih (18223128)
-* **Domain:** Sistem Blog
-* **Layanan:** Layanan Optimasi Penemuan Konten Pada Sistem Blog
-* [cite_start]**Deliverable Saat Ini:** **Tahap 4 - Implementasi Awal** [cite: 16]
+## 🚀 Cara Memulai Pengembangan
 
-## 🚀 Gambaran Umum
+Untuk mengerjakan proyek ini di komputer Anda (pengembangan lokal) ikuti langkah-langkah di bawah ini.
 
-[cite_start]Tujuan dari *milestone* ini adalah menerjemahkan **Tahapan Desain Taktis (Deliverable 3)** [cite: 4450-4640] [cite_start]menjadi kode API dasar yang fungsional menggunakan FastAPI[cite: 16, 29].
+### Prasyarat
 
-### Bounded Context yang Diimplementasikan
+Pastikan Anda sudah menginstal **Python 3.9** (atau lebih tinggi) dan **Git**. Anda juga disarankan untuk familiar dengan *virtual environment* (`venv`) Python.
 
-[cite_start]Implementasi ini berfokus secara eksklusif pada **`Content Discovery Context` (BC2)** [cite: 4522-4524, 4549].
+### Langkah-langkah Instalasi
 
-[cite_start]Konteks ini bertanggung jawab untuk mengimplementasikan **Core Domain** [cite: 4481-4483][cite_start], yaitu logika `Filter dan Pencarian Berbasis Tag atau Kategori`[cite: 4482]. [cite_start]API ini menerima kriteria pencarian dari pengguna dan mengembalikan daftar artikel yang relevan[cite: 4477].
+1.  **Clone repositori ini :**
+    ```bash
+    git clone [https://github.com/Azizdzaki/FinalProject_TST_ContentBlogHub.git](https://github.com/Azizdzaki/FinalProject_TST_ContentBlogHub.git)
+    ```
 
-Untuk tujuan pengujian, data dari `Content Catalog Context` (BC1) disimulasikan sebagai *mock database* (data *in-memory*).
+2.  **Masuk ke direktori proyek :**
+    ```bash
+    cd FinalProject_TST_ContentBlogHub
+    ```
 
-## ⚙️ Teknologi yang Digunakan
+3.  **Buat dan aktifkan virtual environment :**
+    ```bash
+    # Buat venv
+    python -m venv venv
+    
+    # Aktifkan di Windows (PowerShell)
+    .\venv\Scripts\Activate.ps1
+    
+    # (Atau di macOS/Linux)
+    # source venv/bin/activate
+    ```
 
-* **Python 3.10+**
-* [cite_start]**FastAPI**: *Framework* untuk membangun API [cite: 29, 2406-2407].
-* [cite_start]**Uvicorn**: Server ASGI untuk menjalankan FastAPI [cite: 2404-2405].
-* [cite_start]**Pydantic**: Untuk validasi dan pemodelan data [cite: 2421, 2577-2582].
+4.  **Install semua dependensi yang dibutuhkan :**
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-## 📚 Struktur Proyek
+### Jalankan server pengembangan
 
-[cite_start]Struktur direktori ini didasarkan pada materi kuliah `Application-Structure` [cite: 2949-2959] untuk memastikan modularitas.
+1.  **Jalankan server pengembangan :**
+    ```bash
+    uvicorn app.main:app --reload
+    ```
+    *(Atau, Anda juga bisa menjalankan `python app/main.py`)*
+
+2.  Setelah itu buka browser dan akses alamat server lokal yang muncul di terminal Anda (biasanya `http://localhost:8000/docs`). [cite_start]Aplikasi akan otomatis me-reload setiap kali Anda menyimpan perubahan pada kode[cite: 6646].
+
+### Terima Kasih!
