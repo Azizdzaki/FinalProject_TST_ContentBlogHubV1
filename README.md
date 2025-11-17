@@ -1,16 +1,16 @@
 # Content Blog Hub
 
-Content Blog Hub adalah sebuah layanan *backend* (API) yang dirancang untuk **Layanan Optimasi Penemuan Konten Pada Sistem Blog**. Dibuat dengan **Python**, **FastAPI**, dan **Pydantic**, dan berfokus pada implementasi *Core Domain* (`Content Discovery Context`) dari desain DDD.
+Content Blog Hub adalah sebuah layanan *backend* (API) yang dirancang untuk **Layanan Optimasi Penemuan Konten Pada Sistem Blog**. Dibuat dengan **Python**, **FastAPI**, dan **Pydantic**, dan berfokus pada implementasi *Core Domain* (Content Discovery Context) dari desain DDD.
 
-## 🚀 Cara Memulai Pengembangan
+## Cara Memulai Pengembangan
 
-Untuk mengerjakan proyek ini di komputer Anda (pengembangan lokal) ikuti langkah-langkah di bawah ini.
+Untuk mengerjakan proyek ini di komputer Anda pengembangan lokal ikuti langkah-langkah di bawah ini.
 
-### Prasyarat
+### Syarat
 
 Pastikan Anda sudah menginstal **Python 3.9** atau lebih tinggi dan **Git**. Anda juga disarankan untuk familiar dengan *virtual environment* Python.
 
-### Langkah-langkah Instalasi
+### Langkah Instalasi
 
 1.  **Clone repositori ini :**
     ```bash
@@ -39,7 +39,7 @@ Pastikan Anda sudah menginstal **Python 3.9** atau lebih tinggi dan **Git**. And
     pip install -r requirements.txt
     ```
 
-### Jalankan server pengembangan
+### Cara Menjalankan Sistem
 
 1.  **Jalankan server pengembangan :**
     ```bash
