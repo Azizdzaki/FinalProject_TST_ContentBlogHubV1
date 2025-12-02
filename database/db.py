@@ -29,3 +29,20 @@ mock_articles = {
         "tags": [mock_tags["t1"]]
     }
 }
+
+mock_users = {
+    "azizdzaki": {
+        "username": "azizdzaki",
+        "full_name": "Muhammad Azizdzaki",
+        "email": "aziz@example.com",
+        "hashed_password": "secret",
+        "disabled": False,
+    },
+    "johndoe": {
+        "username": "johndoe",
+        "full_name": "John Doe",
+        "email": "johndoe@example.com",
+        "hashed_password": "secret",
+        "disabled": False,
+    }
+}
