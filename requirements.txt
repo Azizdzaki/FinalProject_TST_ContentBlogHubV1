@@ -4,3 +4,7 @@ pydantic
 python-jose[cryptography]
 passlib[bcrypt]
 python-multipart
+pytest
+pytest-cov
+pytest-asyncio
+httpx
