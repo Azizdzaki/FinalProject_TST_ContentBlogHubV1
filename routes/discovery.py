@@ -1,5 +1,4 @@
-from fastapi import APIRouter, Depends, HTTPException
-from typing import List
+from fastapi import APIRouter, Depends
 from models.discovery import SearchCriteria
 from models.user import User
 from database.db import mock_articles
@@ -10,9 +9,10 @@ discovery_router = APIRouter(
     tags=["Content Discovery"]
 )
 
+
 @discovery_router.post("/")
 async def find_relevant_articles(
-    criteria: SearchCriteria, 
+    criteria: SearchCriteria,
     N: int = 10,
     current_user: User = Depends(get_current_user)
 ):
@@ -35,7 +35,9 @@ async def find_relevant_articles(
         search_tags_lower = {tag.lower() for tag in criteria.tags}
         temp_results = []
         for article in filtered_articles:
-            article_tags_lower = {tag["name"].lower() for tag in article["tags"]}
+            article_tags_lower = {
+                tag["name"].lower() for tag in article["tags"]
+            }
             if search_tags_lower.issubset(article_tags_lower):
                 temp_results.append(article)
         filtered_articles = temp_results

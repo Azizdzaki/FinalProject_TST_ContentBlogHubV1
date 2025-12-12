@@ -13,12 +13,14 @@ mock_articles = {
     "a1": {
         "article_id": "a1", "title": "Tutorial FastAPI Lengkap",
         "publish_date": "2025-11-15", "snippet": "Belajar FastAPI dari nol...",
-        "category": mock_categories["c1"], 
-        "tags": [mock_tags["t1"], mock_tags["t2"]] 
+        "category": mock_categories["c1"],
+        "tags": [mock_tags["t1"], mock_tags["t2"]]
     },
     "a2": {
-        "article_id": "a2", "title": "Pentingnya DDD dalam Sistem",
-        "publish_date": "2025-11-16", "snippet": "Domain-Driven Design adalah...",
+        "article_id": "a2",
+        "title": "Pentingnya DDD dalam Sistem",
+        "publish_date": "2025-11-16",
+        "snippet": "Domain-Driven Design adalah...",
         "category": mock_categories["c1"],
         "tags": [mock_tags["t3"]]
     },
